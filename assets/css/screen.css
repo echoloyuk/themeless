@@ -1,0 +1,16 @@
+/* global var */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ccc;
+  font: lighter 16px 'Microsoft YaHei', sans-serif;
+}
+@media screen and (min-width: 1024px) {
+  .themeless .nav {
+    display: none;
+  }
+  .themeless header.header {
+    position: relative;
+  }
+}
