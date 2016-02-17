@@ -61,5 +61,52 @@
                 }
             }
         }
+
+        main.content{
+            width:1000px;
+            margin:0 auto;
+            min-height:400px;
+        }
+
+        footer.footer{
+            background-color:#444;
+            min-height:160px;
+            color:#fff;
+            padding-top:50px;
+            box-sizing:border-box;
+            
+            a{
+                text-decoration:underline;
+                &:hover{
+                    text-decoration:underline;
+                    color:#fff;
+                }
+                &:visited{
+                    color:#fff;
+                }
+            }
+
+            section.copyright, section.poweredby, section.themeby{
+                width:1000px;
+                text-align:center;
+                margin:0 auto;
+                color:#fff;
+                line-height:2em;
+            }
+            section.copyright{
+                margin-bottom:30px;
+            }
+            section.poweredby, section.themeby{
+                font-size:13px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .themeless{
+        main.content{
+            width:1400px;
+        }
     }
 }
