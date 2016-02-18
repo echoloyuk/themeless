@@ -7,6 +7,9 @@ body {
   font: lighter 16px 'Microsoft YaHei', sans-serif;
   color: #333;
 }
+a {
+  text-decoration: underline;
+}
 @media screen and (min-width: 1024px) {
   .themeless .nav,
   .themeless .nav-cover {
@@ -17,7 +20,7 @@ body {
     height: 400px;
     background-position: center bottom;
     background-repeat: no-repeat;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   .themeless .index-header.no-cover {
     background-color: #555;
@@ -74,14 +77,51 @@ body {
     margin: 0 auto;
     min-height: 400px;
   }
+  .themeless .index-content article.post {
+    margin-bottom: 3em;
+    border-bottom: 1px solid #ccc;
+  }
+  .themeless .index-content article.post header.post-header .post-title {
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 0.8em 0;
+  }
+  .themeless .index-content article.post header.post-header .post-title a {
+    text-decoration: none;
+    color: #333;
+  }
+  .themeless .index-content article.post header.post-header .post-title:hover a {
+    color: #999;
+  }
+  .themeless .index-content article.post section.post-excerpt {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #666;
+  }
+  .themeless .index-content article.post section.post-excerpt p {
+    margin: 0.5em 0;
+  }
+  .themeless .index-content article.post footer.post-meta {
+    margin: 1em 0;
+    color: #666;
+  }
+  .themeless .index-content article.post footer.post-meta .meta-item {
+    margin-right: 1em;
+  }
+  .themeless .index-content article.post footer.post-meta .meta-item a {
+    color: #666;
+  }
+  .themeless .index-content article.post footer.post-meta .meta-item a:visited {
+    color: #666;
+  }
   .themeless .post-content .post-header {
     border-bottom: 1px solid #333;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
   .themeless .post-content .post-header .post-title {
     font-size: 32px;
-    line-height: 2em;
-    margin: 10px 0;
+    line-height: 1.5em;
+    margin: .8em 0;
   }
   .themeless .post-content .post-header .post-title-img {
     max-width: 100%;
@@ -91,7 +131,32 @@ body {
     line-height: 2em;
   }
   .themeless .post-content .post-header section.post-meta .meta-item {
-    margin-right: 10px;
+    margin-right: 1em;
+  }
+  .themeless aside.read-next {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+  }
+  .themeless aside.read-next .next-post,
+  .themeless aside.read-next .prev-post {
+    font-size: 20px;
+    line-height: 2em;
+  }
+  .themeless aside.read-next .next-post .link-to,
+  .themeless aside.read-next .prev-post .link-to {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+  }
+  .themeless aside.read-next .next-post .link-to:visited,
+  .themeless aside.read-next .prev-post .link-to:visited {
+    color: #333;
+  }
+  .themeless aside.read-next .next-post .link-to:hover,
+  .themeless aside.read-next .prev-post .link-to:hover {
+    color: #999999;
   }
   .themeless footer.footer {
     background-color: #444;

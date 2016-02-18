@@ -9,7 +9,7 @@
             height:400px;
             background-position:center bottom;
             background-repeat:no-repeat;
-            margin-bottom:80px;
+            margin-bottom:100px;
 
             &.no-cover{
                 background-color:#555;
@@ -73,15 +73,62 @@
             min-height:400px;
         }
 
+        .index-content{
+            article.post{
+                margin-bottom: 3em;
+                border-bottom:1px solid #ccc;
+
+                header.post-header{
+                    .post-title{
+                        font-size:30px;
+                        line-height:1.5em;
+                        margin: 0.8em 0;
+
+                        a{
+                            text-decoration:none;
+                            color:#333;
+                        }
+
+                        &:hover{
+                            a{
+                                color:#999;
+                            }
+                        }
+                    }
+                }
+                section.post-excerpt{
+                    font-size:16px;
+                    line-height:1.8em;
+                    color:#666;
+                    p{
+                        margin:0.5em 0;
+                    }
+                }
+                footer.post-meta{
+                    margin:1em 0;
+                    color:#666;
+                    .meta-item{
+                        margin-right:1em;
+                        a{
+                            color:#666;
+                            &:visited{
+                                color:#666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .post-content{
             .post-header{
                 border-bottom:1px solid #333;
-                margin-bottom:2em;
+                margin-bottom:3em;
 
                 .post-title{
                     font-size:32px;
-                    line-height:2em;
-                    margin:10px 0;
+                    line-height:1.5em;
+                    margin:.8em 0;
                 }
                 .post-title-img{
                     max-width:100%;
@@ -91,11 +138,36 @@
                     line-height:2em;
 
                     .meta-item{
-                        margin-right:10px;
+                        margin-right:1em;
+                    }
+                }
+            }
+            .post-footer{}
+        }
+        aside.read-next{
+            width:1000px;
+            margin: 20px auto;
+            padding: 20px 0;
+            border-top:1px solid #333;
+
+            .next-post, .prev-post{
+                font-size:20px;
+                line-height:2em;
+
+                .link-to{
+                    text-decoration:none;
+                    font-weight:bold;
+                    color:#333;
+                    &:visited{
+                        color:#333;
+                    }
+                    &:hover{
+                        color:#999
                     }
                 }
             }
         }
+
 
 
         footer.footer{
