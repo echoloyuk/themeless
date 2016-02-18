@@ -6,7 +6,15 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+<header class="index-header post {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <section class="blog-logo-panel">
+        {{#if @blog.logo}}
+        <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        {{/if}}
+    </section>
+</header>
+<!--
+<header class="index-header post-header {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
@@ -14,18 +22,32 @@
         {{/if}}
     </nav>
 </header>
-
-<main class="content" role="main">
+-->
+<main class="post-content" role="main">
     <article class="{{post_class}}">
 
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
+            {{#if image}}
+            <img src="{{image}}" alt="" class="post-title-img">
+            {{/if}}
             <section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+                <span class="meta-item">
+                    Author: <a href="#">{{author}}</a>
+                </span>
+                <span class="meta-item">
+                    Create: <time class="post-date" datetime="{{date created_at format='YYYY-MM-DD'}}">{{date created_at format="YYYY-MM-DD"}}</time>
+                </span>
+                <span  class="meta-item">
+                    Update: <time class="post-date" datetime="{{date updated_at format='YYYY-MM-DD'}}">{{date updated_at format="YYYY-MM-DD"}}</time>
+                </span>
+                <span class="meta-item">
+                    Tags: {{tags prefix=" on "}}
+                </span>
             </section>
         </header>
 
-        <section class="post-content">
+        <section class="post-content themeless-content">
             {{content}}
         </section>
 
@@ -55,7 +77,7 @@
             </section>
 
         {{/author}}
-
+        <!--
             <section class="share">
                 <h4>Share this post</h4>
                 <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
@@ -71,7 +93,7 @@
                     <span class="hidden">Google+</span>
                 </a>
             </section>
-
+        -->
         </footer>
 
     </article>

@@ -2,7 +2,7 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
-<header class="header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+<header class="index-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <section class="blog-logo-panel">
         {{#if @blog.logo}}
         <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
@@ -15,7 +15,7 @@
 </header>
 
 {{! The main content area on the homepage }}
-<main id="content" class="content" role="main">
+<main class="index-content" id="content" role="main">
 
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}

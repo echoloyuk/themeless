@@ -1,0 +1,86 @@
+/* 文章默认样式 */
+@content-font:"Consolas", "Courier New", sans-serif;
+
+.themeless-content{
+    font-size:16px;
+    font-weight:lighter;
+
+    h1, h2, h3, h4, h5, h6{
+        font-weight:bold;
+        margin:20px 0;
+        line-height:2em;
+    }
+    h1{
+        font-size:24px;
+    }
+    h2{
+        font-size:20px;
+    }
+    h3{
+        font-size:18px;
+    }
+    h4, h5, h6{
+        font-size:16px;
+    }
+    p{
+        margin:1.6em 0 2em 0;
+        font-size:16px;
+        line-height:2em;
+    }
+    img{
+        margin:.2em 0;
+        max-width:98%;
+    }
+    a{
+        color:#74200a;
+        text-decoration:underline;
+        &:hover{
+            color:#b84b2e;
+        }
+        &:active{
+            color:#a72b09;
+        }
+    }
+    em{
+        color:#74200a;
+    }
+    strong{
+        color:#74200a;
+        font-weight:bold;
+    }
+        
+    ul, ol{
+        margin:0;
+        padding-left:1.8em;
+
+        li{
+            line-height:1.8em;
+        }
+    }
+    pre{
+        background-color:#eee;
+        padding:1em;
+        border-radius:2px;
+        code{
+            font-family:@content-font;
+            line-height:1.6em;
+            padding:0;
+            background:none;
+        }
+    }
+    code{
+        font-family:@content-font;
+        line-height:1.6em;
+        padding:.1em .2em;
+        background-color:#e8e8e8;
+    }
+    hr{
+        height:0;
+        border:none;
+        border-bottom:1px solid #aaa;
+        margin:8px 0;
+    }
+    blockquote{
+        margin:2em 0 2em 2em;
+    }
+}
