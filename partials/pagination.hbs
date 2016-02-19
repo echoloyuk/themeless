@@ -1,0 +1,13 @@
+{{! this is the pagination templetes}}
+
+<nav class="pagination" role="navigation">
+    <section class="pagination">
+        {{#if prev}}
+        <a href="{{page_url prev}}" class="paging-btn">上一页</a>
+        {{/if}}
+        <span class="paging-info">第{{page}}页/共{{pages}}页</span>
+        {{#if next}}
+        <a href="{{page_url next}}" class="paging-btn">下一页</a>
+        {{/if}}
+    </section>
+</nav>

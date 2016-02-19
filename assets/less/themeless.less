@@ -6,10 +6,27 @@
         }
         .index-header{
             position:relative;
-            height:400px;
+            min-height:400px;
             background-position:center bottom;
             background-repeat:no-repeat;
-            margin-bottom:100px;
+            background-size:cover;
+            background-color:#999;
+            margin-bottom:160px;
+
+            .index-header-bg{
+                width:100%;
+                vertical-align:bottom;
+            }
+            .index-header-mask{
+                position:absolute;
+                left:0;
+                top:0;
+                bottom:0;
+                right:0;
+                background-color:#000;
+                z-index:1;
+                opacity:0.5;
+            }
 
             &.no-cover{
                 background-color:#555;
@@ -25,6 +42,7 @@
                 margin-bottom:-90px;
                 background-color:#fefefe;
                 border-radius:90px;
+                z-index:10;
 
                 .blog-logo{
                     position:absolute;
@@ -47,23 +65,57 @@
                 width:1000px;
                 height: 200px;
                 margin:0 auto;
-                text-align:center;
-                padding-top:100px;
                 color:#fff;
+                position:absolute;
+                top:50%;
+                left:50%;
+                margin-top:-100px;
+                margin-left:-500px;
+                z-index:10;
 
                 .title{
-                    font-size:32px;
+                    font-size:48px;
                     line-height:1.5em;
+                    margin:0.5em 0;
                 }
                 .description{
-                    font-size:16px;
+                    font-size:24px;
                     font-weight:lighter;
                     line-height:1.5em;
+                    margin:0;
+                }
+            }
+            .index-blog-back{
+                width:1000px;
+                height:80px;
+                line-height:80px;
+                font-size:20px;
+                position:absolute;
+                z-index:10;
+                top:50%;
+                left:50%;
+                margin-top:-40px;
+                margin-left:-500px;
+
+                a{
+                    color:#fff;
+                    text-decoration:none;
+                    outline:none;
+                    .transition;
+                    &:visited{
+                        color:#fff;
+                    }
+                    &:hover{
+                        color:#ccc;
+                    }
+                    &:active{
+                        color:#eee;
+                    }
                 }
             }
 
             &.post{
-                height: 160px;
+                min-height: 160px;
             }
         }
 
@@ -85,6 +137,7 @@
                         margin: 0.8em 0;
 
                         a{
+                            .transition;
                             text-decoration:none;
                             color:#333;
                         }
@@ -114,6 +167,42 @@
                             &:visited{
                                 color:#666;
                             }
+                        }
+                    }
+                }
+            }
+            nav.pagination{
+                margin:4em 0;
+                section.pagination{
+                    height:30px;
+                    line-height:30px;
+                    text-align:center;
+
+                    a.paging-btn{
+                        display:inline-block;
+                        height:30px;
+                        line-height:30px;
+                        text-decoration:none;
+                        color:#555;
+                        outline:none;
+                        width:80px;
+                        border:1px solid #999;
+                        text-align:center;
+                        cursor:pointer;
+                        margin:0 20px;
+                        border-radius:4px;
+                        .transition;
+
+                        &:visited{
+                            color:#555;
+                        }
+
+                        &:hover{
+                            background-color:#aaa;
+                            color:#fff;
+                        }
+                        &:active{
+                            background-color:#666;
                         }
                     }
                 }
@@ -158,6 +247,7 @@
                     text-decoration:none;
                     font-weight:bold;
                     color:#333;
+                    .transition;
                     &:visited{
                         color:#333;
                     }
