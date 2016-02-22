@@ -22,7 +22,7 @@ a {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #999;
+    background-color: #444;
     margin-bottom: 160px;
   }
   .themeless .index-header .index-header-bg {
@@ -84,13 +84,61 @@ a {
   .themeless .index-header .blog-title-panel .title {
     font-size: 48px;
     line-height: 1.5em;
-    margin: 0.5em 0;
+    margin: 0 0 0.5em 0;
   }
   .themeless .index-header .blog-title-panel .description {
     font-size: 24px;
     font-weight: lighter;
     line-height: 1.5em;
     margin: 0;
+  }
+  .themeless .index-header .blog-title-panel .tag-name {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 2em;
+    margin: 0;
+  }
+  .themeless .index-header .blog-title-panel .tag-description,
+  .themeless .index-header .blog-title-panel .author-bio {
+    margin: 0;
+    line-height: 2em;
+    font-size: 16px;
+  }
+  .themeless .index-header .blog-title-panel .author-name {
+    font-size: 32px;
+    line-height: 1.5em;
+    margin: 0;
+  }
+  .themeless .index-header .blog-title-panel .author-loaction,
+  .themeless .index-header .blog-title-panel .author-others {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 1em 0;
+  }
+  .themeless .index-header .blog-title-panel .author-loaction a,
+  .themeless .index-header .blog-title-panel .author-others a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .themeless .index-header .blog-title-panel .author-loaction a:hover,
+  .themeless .index-header .blog-title-panel .author-others a:hover {
+    color: #ccc;
+  }
+  .themeless .index-header .blog-title-panel .author-loaction a:visited,
+  .themeless .index-header .blog-title-panel .author-others a:visited {
+    color: #fff;
+  }
+  .themeless .index-header.author {
+    min-height: 500px;
+  }
+  .themeless .index-header.author .blog-title-panel {
+    height: 300px;
+    margin-top: -150px;
   }
   .themeless .index-header .index-blog-back {
     width: 1000px;
