@@ -33,27 +33,28 @@
             }
 
             .blog-logo-panel{
-                position:absolute;
-                width:180px;
+                
+                width:1000px;
                 height:180px;
-                bottom:0;
+                bottom:-90px;
                 left:50%;
-                margin-left:-90px;
-                margin-bottom:-90px;
-                background-color:#fefefe;
-                border-radius:90px;
+                margin-left:-500px;
+                margin-top:-90px;
+                background:none;
                 z-index:10;
+                position:absolute;
 
                 .blog-logo{
                     position:absolute;
                     width:160px;
                     height:160px;
-                    left:50%;
+                    left:0;
                     top:50%;
-                    margin-left:-80px;
-                    margin-top:-80px;
+                    margin-top:-90px;
                     overflow:hidden;
-                    border-radius:80px;
+                    border-radius:90px;
+                    border:10px solid #fefefe; 
+                    background-color:#fefefe;
 
                     img{
                         width:100%;
@@ -136,6 +137,7 @@
                 left:50%;
                 margin-top:-40px;
                 margin-left:-500px;
+                text-align:right;
 
                 a{
                     color:#fff;
@@ -163,12 +165,15 @@
             width:1000px;
             margin:0 auto;
             min-height:400px;
+            padding:0;
         }
 
         .index-content{
             article.post{
                 margin-bottom: 3em;
                 border-bottom:1px solid #ccc;
+                width:1000px;
+                margin:0 auto 4em;
 
                 header.post-header{
                     .post-title{
@@ -252,7 +257,9 @@
         .post-content{
             .post-header{
                 border-bottom:1px solid #333;
-                margin-bottom:3em;
+                margin:0 auto 3em;
+                width:1000px;
+                position:relative;
 
                 .post-title{
                     font-size:32px;
@@ -268,6 +275,20 @@
 
                     .meta-item{
                         margin-right:1em;
+
+                        &.meta-tags{
+                            a{
+                                text-decoration:none;
+                                color: #fff;
+                                background-color:#666;
+                                padding:2px 6px;
+                                .transition;
+
+                                &:hover{
+                                    background-color:#999;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -324,6 +345,10 @@
                 margin:0 auto;
                 color:#fff;
                 line-height:2em;
+
+                a{
+                    color:#fff;
+                }
             }
             section.copyright{
                 margin-bottom:30px;

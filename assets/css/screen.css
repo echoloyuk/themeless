@@ -43,27 +43,27 @@ a {
     background-color: #555;
   }
   .themeless .index-header .blog-logo-panel {
-    position: absolute;
-    width: 180px;
+    width: 1000px;
     height: 180px;
-    bottom: 0;
+    bottom: -90px;
     left: 50%;
-    margin-left: -90px;
-    margin-bottom: -90px;
-    background-color: #fefefe;
-    border-radius: 90px;
+    margin-left: -500px;
+    margin-top: -90px;
+    background: none;
     z-index: 10;
+    position: absolute;
   }
   .themeless .index-header .blog-logo-panel .blog-logo {
     position: absolute;
     width: 160px;
     height: 160px;
-    left: 50%;
+    left: 0;
     top: 50%;
-    margin-left: -80px;
-    margin-top: -80px;
+    margin-top: -90px;
     overflow: hidden;
-    border-radius: 80px;
+    border-radius: 90px;
+    border: 10px solid #fefefe;
+    background-color: #fefefe;
   }
   .themeless .index-header .blog-logo-panel .blog-logo img {
     width: 100%;
@@ -151,6 +151,7 @@ a {
     left: 50%;
     margin-top: -40px;
     margin-left: -500px;
+    text-align: right;
   }
   .themeless .index-header .index-blog-back a {
     color: #fff;
@@ -179,10 +180,13 @@ a {
     width: 1000px;
     margin: 0 auto;
     min-height: 400px;
+    padding: 0;
   }
   .themeless .index-content article.post {
     margin-bottom: 3em;
     border-bottom: 1px solid #ccc;
+    width: 1000px;
+    margin: 0 auto 4em;
   }
   .themeless .index-content article.post header.post-header .post-title {
     font-size: 30px;
@@ -261,7 +265,9 @@ a {
   }
   .themeless .post-content .post-header {
     border-bottom: 1px solid #333;
-    margin-bottom: 3em;
+    margin: 0 auto 3em;
+    width: 1000px;
+    position: relative;
   }
   .themeless .post-content .post-header .post-title {
     font-size: 32px;
@@ -277,6 +283,20 @@ a {
   }
   .themeless .post-content .post-header section.post-meta .meta-item {
     margin-right: 1em;
+  }
+  .themeless .post-content .post-header section.post-meta .meta-item.meta-tags a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #666;
+    padding: 2px 6px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .themeless .post-content .post-header section.post-meta .meta-item.meta-tags a:hover {
+    background-color: #999;
   }
   .themeless aside.read-next {
     width: 1000px;
@@ -333,6 +353,11 @@ a {
     margin: 0 auto;
     color: #fff;
     line-height: 2em;
+  }
+  .themeless footer.footer section.copyright a,
+  .themeless footer.footer section.poweredby a,
+  .themeless footer.footer section.themeby a {
+    color: #fff;
   }
   .themeless footer.footer section.copyright {
     margin-bottom: 30px;
