@@ -38,14 +38,12 @@
 
     </div>
 
-    {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="{{asset "js/jquery.js"}}"></script>
-
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
-    {{!-- <script type="text/javascript" src="{{asset "js/index.js"}}"></script> --}}
+    {{! The main JavaScript file for Themeless }}
+    <script type="text/javascript" src="{{asset "js/jquery.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/themeless.js"}}"></script>
 
 </body>
 </html>
