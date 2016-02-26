@@ -1,5 +1,6 @@
 /* global var */
 @font:lighter 16px 'Microsoft YaHei', sans-serif;
+@fontMob:lighter 20px 'Microsoft YaHei', sans-serif;
 
 html, body{
     padding:0;
@@ -11,4 +12,10 @@ html, body{
 
 a{
     text-decoration:underline;
+}
+
+@media screen and (max-width:1024px){
+    html, body{
+        font:@fontMob;
+    }
 }
