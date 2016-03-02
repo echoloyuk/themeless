@@ -7,34 +7,20 @@
 {{#post}}
 
 <header class="index-header post {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    {{#if image}}
+        <img src="{{image}}" alt="{{image}}" class="index-header-bg">
+    {{/if}}
     <div class="index-header-mask"></div>
     <section class="blog-logo-panel">
         {{#if @blog.logo}}
         <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
         {{/if}}
     </section>
-    <section class="index-blog-back">
-        <a href="{{@blog.url}}" class="back-to-home-btn">Back to Home</a>
-    </section>
 </header>
-<!--
-<header class="index-header post-header {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-        {{#if @blog.navigation}}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {{/if}}
-    </nav>
-</header>
--->
 <main class="post-content" role="main">
     <article class="{{post_class}}">
-
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
-            {{#if image}}
-            <img src="{{image}}" alt="" class="post-title-img">
-            {{/if}}
             <section class="post-meta">
                 <span class="meta-item">
                     Author: {{#author}}<a href="{{url}}">{{/author}}{{author}}</a>

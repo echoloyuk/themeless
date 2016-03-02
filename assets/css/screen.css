@@ -422,9 +422,6 @@ a {
   .themeless .index-header .index-blog-back a:active {
     color: #eee;
   }
-  .themeless .index-header.post {
-    min-height: 160px;
-  }
   .themeless .index-content,
   .themeless .post-content {
     width: 1000px;
