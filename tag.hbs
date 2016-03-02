@@ -5,13 +5,12 @@
 <header class="index-header tag">
     {{#if tag.image}}
         <img src="{{tag.image}}" alt="{{tag.image}}" class="index-header-bg">
-        <div class="index-header-mask"></div>
     {{else}}
         {{#if @blog.cover}}
             <img src="{{@blog.cover}}" alt="{{@blog.title}}" class="index-header-bg">
-            <div class="index-header-mask"></div>
         {{/if}}
     {{/if}}
+    <div class="index-header-mask"></div>
     <section class="blog-logo-panel">
         {{#if @blog.logo}}
         <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>

@@ -136,17 +136,6 @@
             }
         }
         .post-content{
-            .post-header{
-                border-bottom:1px solid #999;
-                .post-meta{
-                    font-size:14px;
-                    line-height:1.5em;
-                    margin-bottom:10px;
-                }
-                .post-title-img{
-                    width:100%;
-                }
-            }
             section.post-content{
                 margin:0;
             }
@@ -294,9 +283,6 @@
                 opacity:0.5;
             }
 
-            &.no-cover{
-                background-color:#555;
-            }
 
             .blog-logo-panel{
                 
@@ -321,6 +307,11 @@
                     border-radius:90px;
                     border:10px solid #fefefe; 
                     background-color:#fefefe;
+                    .transition;
+
+                    &:hover{
+                    	box-shadow:0 0 8px #222;
+                    }
 
                     img{
                         width:100%;
@@ -363,9 +354,9 @@
                     font-size:16px;
                 }
                 .author-name{
-                    font-size:32px;
+                    font-size:40px;
                     line-height:1.5em;
-                    margin:0;
+                    margin:0 0 0.5em;
                 }
                 .author-loaction, .author-others{
                     font-size:16px;
@@ -373,7 +364,7 @@
                     margin:1em 0;
                     a{
                         color:#fff;
-                        text-decoration:none;
+                        
                         .transition;
                         &:hover{
                             color:#ccc;
@@ -383,9 +374,48 @@
                         }
                     }
                 }
+                &.post{
+                	.post-title{
+						font-size: 40px;
+						line-height:1.5em;
+						margin:0 0 0.6em;
+					}
+					section.post-meta{
+						margin:0.5em 0;
+						font-size:16px;
+						color:#fff;
+						a{
+							color:#fff;
+							&:visited{
+								color:#fff;
+							}
+						}
+						.meta-item{
+							margin-right:1em;
+							line-height:2em;
+
+							&.meta-tags{
+								a{
+									text-decoration:none;
+									font-size: 16px;
+									line-height:1.5em;
+									border:1px solid #fff;
+									display:inline-block;
+									padding:0 .5em;
+									border-radius:4px;
+									.transition;
+
+									&:hover{
+										color:#fff;
+										background-color: #ccc;
+									}
+								}
+							}
+						}
+					}
+                }
             }
             &.author{
-                min-height:500px;
                 
                 .blog-title-panel{
                     height:300px;
@@ -517,45 +547,7 @@
         }
 
         .post-content{
-            .post-header{
-                border-bottom:1px solid #333;
-                margin:0 auto 3em;
-                width:1000px;
-                position:relative;
-
-                .post-title{
-                    font-size:32px;
-                    line-height:1.5em;
-                    margin:.8em 0;
-                }
-                .post-title-img{
-                    max-width:100%;
-                }
-                section.post-meta{
-                    font-size:14px;
-                    line-height:2em;
-
-                    .meta-item{
-                        margin-right:1em;
-
-                        &.meta-tags{
-                            a{
-                                text-decoration:none;
-                                color: #fff;
-                                background-color:#666;
-                                padding:2px 6px;
-                                border-radius:4px;
-                                .transition;
-
-                                &:hover{
-                                    background-color:#999;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .post-footer{}
+            
         }
         aside.read-next{
             width:1000px;

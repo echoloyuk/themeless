@@ -16,27 +16,27 @@
         <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
         {{/if}}
     </section>
+    <section class="blog-title-panel {{post_class}}">
+        <h1 class="post-title">{{title}}</h1>
+        <section class="post-meta">
+            <span class="meta-item">
+                Author: {{#author}}<a href="{{url}}">{{/author}}{{author}}</a>
+            </span>
+            <span class="meta-item">
+                Create: <time class="post-date" datetime="{{date created_at format='YYYY-MM-DD'}}">{{date created_at format="YYYY-MM-DD"}}</time>
+            </span>
+            <span  class="meta-item">
+                Update: <time class="post-date" datetime="{{date updated_at format='YYYY-MM-DD'}}">{{date updated_at format="YYYY-MM-DD"}}</time>
+            </span>
+            <br>
+            <span class="meta-item meta-tags">
+                Tags: {{tags prefix=" on "}}
+            </span>
+        </section>
+    </section>
 </header>
 <main class="post-content" role="main">
     <article class="{{post_class}}">
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
-            <section class="post-meta">
-                <span class="meta-item">
-                    Author: {{#author}}<a href="{{url}}">{{/author}}{{author}}</a>
-                </span>
-                <span class="meta-item">
-                    Create: <time class="post-date" datetime="{{date created_at format='YYYY-MM-DD'}}">{{date created_at format="YYYY-MM-DD"}}</time>
-                </span>
-                <span  class="meta-item">
-                    Update: <time class="post-date" datetime="{{date updated_at format='YYYY-MM-DD'}}">{{date updated_at format="YYYY-MM-DD"}}</time>
-                </span>
-                <span class="meta-item meta-tags">
-                    Tags: {{tags prefix=" on "}}
-                </span>
-            </section>
-        </header>
-
         <section class="post-content themeless-content">
             {{content}}
         </section>

@@ -135,17 +135,6 @@ a {
     margin: 1em 0;
     line-height: 1.5em;
   }
-  .themeless .post-content .post-header {
-    border-bottom: 1px solid #999;
-  }
-  .themeless .post-content .post-header .post-meta {
-    font-size: 14px;
-    line-height: 1.5em;
-    margin-bottom: 10px;
-  }
-  .themeless .post-content .post-header .post-title-img {
-    width: 100%;
-  }
   .themeless .post-content section.post-content {
     margin: 0;
   }
@@ -289,9 +278,6 @@ a {
     z-index: 1;
     opacity: 0.5;
   }
-  .themeless .index-header.no-cover {
-    background-color: #555;
-  }
   .themeless .index-header .blog-logo-panel {
     width: 1000px;
     height: 180px;
@@ -314,6 +300,14 @@ a {
     border-radius: 90px;
     border: 10px solid #fefefe;
     background-color: #fefefe;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .themeless .index-header .blog-logo-panel .blog-logo:hover {
+    box-shadow: 0 0 8px #222;
   }
   .themeless .index-header .blog-logo-panel .blog-logo img {
     width: 100%;
@@ -355,9 +349,9 @@ a {
     font-size: 16px;
   }
   .themeless .index-header .blog-title-panel .author-name {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 1.5em;
-    margin: 0;
+    margin: 0 0 0.5em;
   }
   .themeless .index-header .blog-title-panel .author-loaction,
   .themeless .index-header .blog-title-panel .author-others {
@@ -368,7 +362,6 @@ a {
   .themeless .index-header .blog-title-panel .author-loaction a,
   .themeless .index-header .blog-title-panel .author-others a {
     color: #fff;
-    text-decoration: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -383,8 +376,43 @@ a {
   .themeless .index-header .blog-title-panel .author-others a:visited {
     color: #fff;
   }
-  .themeless .index-header.author {
-    min-height: 500px;
+  .themeless .index-header .blog-title-panel.post .post-title {
+    font-size: 40px;
+    line-height: 1.5em;
+    margin: 0 0 0.6em;
+  }
+  .themeless .index-header .blog-title-panel.post section.post-meta {
+    margin: 0.5em 0;
+    font-size: 16px;
+    color: #fff;
+  }
+  .themeless .index-header .blog-title-panel.post section.post-meta a {
+    color: #fff;
+  }
+  .themeless .index-header .blog-title-panel.post section.post-meta a:visited {
+    color: #fff;
+  }
+  .themeless .index-header .blog-title-panel.post section.post-meta .meta-item {
+    margin-right: 1em;
+    line-height: 2em;
+  }
+  .themeless .index-header .blog-title-panel.post section.post-meta .meta-item.meta-tags a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5em;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 0 .5em;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .themeless .index-header .blog-title-panel.post section.post-meta .meta-item.meta-tags a:hover {
+    color: #fff;
+    background-color: #ccc;
   }
   .themeless .index-header.author .blog-title-panel {
     height: 300px;
@@ -510,42 +538,6 @@ a {
   .themeless .index-content nav.pagination section.pagination a.paging-btn:active {
     background-color: #666;
   }
-  .themeless .post-content .post-header {
-    border-bottom: 1px solid #333;
-    margin: 0 auto 3em;
-    width: 1000px;
-    position: relative;
-  }
-  .themeless .post-content .post-header .post-title {
-    font-size: 32px;
-    line-height: 1.5em;
-    margin: .8em 0;
-  }
-  .themeless .post-content .post-header .post-title-img {
-    max-width: 100%;
-  }
-  .themeless .post-content .post-header section.post-meta {
-    font-size: 14px;
-    line-height: 2em;
-  }
-  .themeless .post-content .post-header section.post-meta .meta-item {
-    margin-right: 1em;
-  }
-  .themeless .post-content .post-header section.post-meta .meta-item.meta-tags a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #666;
-    padding: 2px 6px;
-    border-radius: 4px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .themeless .post-content .post-header section.post-meta .meta-item.meta-tags a:hover {
-    background-color: #999;
-  }
   .themeless aside.read-next {
     width: 1000px;
     margin: 20px auto;
@@ -574,7 +566,7 @@ a {
   }
   .themeless aside.read-next .next-post .link-to:hover,
   .themeless aside.read-next .prev-post .link-to:hover {
-    color: #999999;
+    color: #999;
   }
   .themeless footer.footer {
     background-color: #666;
