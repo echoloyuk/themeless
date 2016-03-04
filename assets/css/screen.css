@@ -367,7 +367,7 @@ a {
 }
 .themeless aside.read-next .next-post .link-to:hover,
 .themeless aside.read-next .prev-post .link-to:hover {
-  color: #999999;
+  color: #999;
 }
 .themeless footer.footer {
   background-color: #666;
@@ -375,6 +375,7 @@ a {
   color: #fff;
   padding-top: 50px;
   box-sizing: border-box;
+  margin-top: 120px;
 }
 .themeless footer.footer a {
   text-decoration: underline;

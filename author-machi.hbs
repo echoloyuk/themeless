@@ -1,0 +1,49 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+
+{{! Everything inside the #author tags pulls data from the author }}
+{{#author}}
+<header class="index-header author">
+    {{#if cover}}
+        <img src="{{cover}}" alt="{{cover}}" class="index-header-bg">
+    {{/if}}
+    <div class="index-header-mask"></div>
+    <section class="blog-title-panel">
+        <h2 class="author-name">{{name}}</h2>
+        <p class="author-location">{{location}}</p>
+        <p class="author-bio">
+            {{#if bio}}{{bio}}{{/if}}
+        </p>
+        <p class="author-others">
+            {{#if website}}Website: <a href="{{website}}">{{website}}</a><br>{{/if}}
+            Total: {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+        </p>
+    </section>
+    {{#if image}}
+    <section class="blog-logo-panel">
+        <a class="blog-logo" href="{{@blog.url}}" title="Back to Home"><img src="{{image}}" alt="{{name}}" /></a>
+    </section>
+    {{/if}}
+</header>
+{{/author}}
+
+{{! The main content area on the homepage }}
+<main class="post-content" role="main">
+    <article class="post">
+        <section class="post-content themeless-content">
+            <p><i>热爱生活，热爱驾着车赏一路风景感受一路幸福。喜爱前端，做平凡但不平庸的前端工程师。</i></p>
+			<p>Hi! 大家好，我是马驰（MaC），毕业于<a href="http://www.cauc.edu.cn/">中国民航大学</a>，计算机学院07级。现在就职于<a href="http://www.travelsky.net/">中国航信</a>研发中心，担任软件工程师。</p>
+			<p>我平日里专注于公司的Web前端开发，深度jQuery拥护者，使用H5+CSS3做过各类产品的原型、DEMO、宣传页。热衷于JavaScript，用它做过各类Web页面的交互。自己写过小的UI框架——TUI（TravelSky UI）并在公司内部推广使用。熟悉jQuery，BootStrap。使用过百度的eCharts，用它做过一些数据可视化的工作。</p>
+			<p>我自己喜欢研究前端相关的技术，从Web的前端工程师开始，逐渐向各个领域下探。包括用户体验，Node.js。我有一个<a href="https://github.com/echoloyuk">Github</a>地址，并且自己练习了一些小东西。当然，你现在看到的是我个人的博客地址。</p>
+			<p>我之前比较懒，开过一些博客，零零散散写过几个博客，但是都因为各种各样的原因没有坚持下来。不过随着时间的推移，我渐渐发现知识积累和分享的重要，希望能够在自己的空间中坚持分享一些东西。</p>
+			<p>我爱听音乐，豆瓣FM的拥护者；HitFM忠实听众；有个小家，有个爱我的老婆！有一堆对我好的家人和朋友；我喜欢打网球、游泳。喜欢听吉他。喜欢奔驰车（AMG GT is the BEST）。平日里喜欢安静的看书和思考，偶尔愿意走出家门看看世界，喜欢在互联网中汲取知识。</p>
+			<p>写写代码，听听音乐，感受生活。</p>
+        </section>
+
+        <footer class="post-footer">
+        </footer>
+    </article>
+</main>
+
