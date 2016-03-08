@@ -68,6 +68,7 @@ a {
 .themeless .index-header .index-header-bg {
   width: 100%;
   vertical-align: bottom;
+  min-height: 400px;
 }
 .themeless .index-header .index-header-mask {
   position: absolute;
