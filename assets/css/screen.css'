@@ -14,7 +14,7 @@ a {
 @media screen and (max-width: 1024px) {
   html,
   body {
-    font: lighter 18px 'Microsoft YaHei', sans-serif;
+    font: lighter 20px 'Microsoft YaHei', sans-serif;
   }
 }
 /* default option */
@@ -23,6 +23,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  margin-left: -500px;
   z-index: 20;
   color: #fff;
   text-align: right;
@@ -35,7 +36,7 @@ a {
   line-height: 1.5em;
   border: 1px solid #fff;
   padding: 0 1em;
-  margin: .2em;
+  margin: 0 .2em;
   display: inline-block;
   min-width: 56px;
   text-align: center;
@@ -410,18 +411,6 @@ a {
   padding-bottom: 10px;
 }
 @media screen and (max-width: 1024px) {
-  .themeless .index-nav {
-    padding: 20px;
-    text-align: left;
-  }
-  .themeless .index-header {
-    margin-bottom: 80px;
-    background-size: auto 100%;
-    background-position: center;
-  }
-  .themeless .index-header.author {
-    min-height: 500px;
-  }
   .themeless .index-header .index-header-bg {
     display: none;
   }
@@ -434,43 +423,6 @@ a {
     width: auto;
     left: 20px;
     margin-left: 0;
-  }
-  .themeless .index-content,
-  .themeless .post-content {
-    width: auto;
-    padding: 20px;
-  }
-  .themeless .index-content article.post {
-    width: auto;
-    margin-bottom: 2em;
-  }
-  .themeless .index-content article.post section.post-excerpt {
-    font-size: 18px;
-  }
-  .themeless .index-content nav.pagination {
-    margin: 1em 0;
-  }
-  .themeless .post-content .post-content {
-    padding: 0;
-  }
-  .themeless aside.read-next {
-    width: auto;
-    padding: 20px;
-  }
-  .themeless aside.read-next section.next-post,
-  .themeless aside.read-next section.prev-post {
-    font-size: 18px;
-  }
-  .themeless footer.footer {
-    margin-top: 30px;
-  }
-  .themeless footer.footer section.copyright,
-  .themeless footer.footer section.poweredby,
-  .themeless footer.footer section.themeby {
-    width: auto;
-    text-align: left;
-    padding: 10px 20px;
-    margin: 0;
   }
 }
 /* 文章默认样式 */
@@ -567,7 +519,7 @@ a {
 /* mob */
 @media screen and (max-width: 1024px) {
   .themeless-content {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: lighter;
   }
   .themeless-content h1,
@@ -581,22 +533,22 @@ a {
     line-height: 2em;
   }
   .themeless-content h1 {
-    font-size: 27px;
+    font-size: 30px;
   }
   .themeless-content h2 {
-    font-size: 22.5px;
+    font-size: 25px;
   }
   .themeless-content h3 {
-    font-size: 20.25px;
+    font-size: 22.5px;
   }
   .themeless-content h4,
   .themeless-content h5,
   .themeless-content h6 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .themeless-content p {
     margin: 1.6em 0 2em 0;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2em;
   }
   .themeless-content img {

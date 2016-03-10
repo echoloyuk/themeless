@@ -6,7 +6,6 @@
         top:0;
         left:0;
         right:0;
-        margin-left:-500px;
         z-index:20;
         color:#fff;
         text-align:right;
@@ -19,7 +18,7 @@
             line-height:1.5em;
             border:1px solid #fff;
             padding:0 1em;
-            margin:0 .2em;
+            margin:.2em;
             display:inline-block;
             min-width:56px;
             text-align:center;
@@ -325,10 +324,6 @@
             }
         }
     }
-
-    .post-content{
-        
-    }
     aside.read-next{
         width:1000px;
         margin: 20px auto;
@@ -398,6 +393,71 @@
 
 @media screen and (max-width:1024px){
     .themeless{
-        
+        .index-nav{
+            padding:20px;
+            text-align:left;
+        }
+        .index-header{
+            margin-bottom:80px;
+            background-size:auto 100%;
+            background-position:center;
+
+            &.author{
+                min-height:500px;
+            }
+
+            .index-header-bg{
+                display:none;
+            }
+            .blog-logo-panel{
+                width:auto;
+                left:20px;
+                margin:0;
+            }
+            .blog-title-panel{
+                width:auto;
+                left:20px;
+                margin-left:0;
+            }
+        }
+        .index-content, .post-content{
+            width:auto;
+            padding:20px;
+        }
+        .index-content{
+            article.post{
+                width:auto;
+                margin-bottom:2em;
+
+                section.post-excerpt{
+                    font-size:18px;
+                }
+            }
+            nav.pagination{
+                margin:1em 0;
+            }
+        }
+        .post-content{
+            .post-content{
+                padding:0;
+            }
+        }
+        aside.read-next{
+            width:auto;
+            padding:20px;
+
+            section.next-post, section.prev-post{
+                font-size:18px;
+            }
+        }
+        footer.footer{
+            margin-top:30px;
+            section.copyright, section.poweredby, section.themeby{
+                width:auto;
+                text-align:left;
+                padding:10px 20px;
+                margin:0;
+            }
+        }
     }
 }
