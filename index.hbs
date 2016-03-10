@@ -2,7 +2,7 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
-<header class="index-header">
+<header class="index-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>
     {{#if @blog.cover}}
         <img src="{{@blog.cover}}" alt="{{@blog.title}}" class="index-header-bg">
     {{/if}}
