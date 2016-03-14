@@ -419,7 +419,8 @@ a {
     background-size: auto 100%;
     background-position: center;
   }
-  .themeless .index-header.author {
+  .themeless .index-header.author,
+  .themeless .index-header.post {
     min-height: 500px;
   }
   .themeless .index-header .index-header-bg {
