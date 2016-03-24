@@ -411,6 +411,9 @@ a {
   font-size: 13px;
   padding-bottom: 10px;
 }
+.themeless footer.footer section.icp {
+  font-size: 13px;
+}
 .themeless footer.footer section.icp a {
   text-decoration: none;
 }
