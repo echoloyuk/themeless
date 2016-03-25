@@ -3,9 +3,6 @@
 
 {{! The big featured header }}
 <header class="index-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>
-    {{#if @blog.cover}}
-        <img src="{{@blog.cover}}" alt="{{@blog.title}}" class="index-header-bg">
-    {{/if}}
     <div class="index-header-mask"></div>
     <section class="blog-logo-panel">
         {{#if @blog.logo}}

@@ -2,14 +2,13 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
-<header class="index-header tag">
+<header class="index-header tag"
     {{#if tag.image}}
-        <img src="{{tag.image}}" alt="{{tag.image}}" class="index-header-bg">
-    {{else}}
-        {{#if @blog.cover}}
-            <img src="{{@blog.cover}}" alt="{{@blog.title}}" class="index-header-bg">
-        {{/if}}
+        style="background-image: url({{tag.image}})"
+    {{else if @blog.cover}}
+        style="background-image: url({{@blog.cover}})"
     {{/if}}
+>
     <div class="index-header-mask"></div>
     <section class="blog-logo-panel">
         {{#if @blog.logo}}

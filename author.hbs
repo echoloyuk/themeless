@@ -5,10 +5,13 @@
 
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-<header class="index-header author">
+<header class="index-header author"
     {{#if cover}}
-        <img src="{{cover}}" alt="{{cover}}" class="index-header-bg">
+        style="background-image: url({{cover}})"
+    {{else if @blog.cover}}
+        style="background-image: url({{@blog.cover}})"
     {{/if}}
+>
     <div class="index-header-mask"></div>
     <section class="blog-title-panel">
         <h2 class="author-name">{{name}}</h2>

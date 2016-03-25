@@ -6,10 +6,13 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="index-header post {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    {{#if image}}
-        <img src="{{image}}" alt="{{image}}" class="index-header-bg">
-    {{/if}}
+<header class="index-header post" 
+    {{#if image}} 
+        style="background-image: url({{image}})"
+    {{else if @blog.cover}}
+        style="background-image: url({{@blog.cover}})"
+    {{/if}}>
+    
     <div class="index-header-mask"></div>
     <section class="blog-logo-panel">
         {{#if @blog.logo}}
