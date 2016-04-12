@@ -1,0 +1,25 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose stack Error: Invalid version: "0.1.dev"
+4 verbose stack     at Object.module.exports.fixVersionField (D:\Program Files\nodejs\node_modules\npm\node_modules\normalize-package-data\lib\fixer.js:191:13)
+4 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\normalize-package-data\lib\normalize.js:32:38
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at normalize (D:\Program Files\nodejs\node_modules\npm\node_modules\normalize-package-data\lib\normalize.js:31:15)
+4 verbose stack     at final (D:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:338:5)
+4 verbose stack     at then (D:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:113:5)
+4 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:300:12
+4 verbose stack     at D:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+5 verbose cwd D:\nodejs\ghost\content\themes\themeless\assets
+6 error Windows_NT 6.1.7600
+7 error argv "D:\\Program Files\\nodejs\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+8 error node v4.4.0
+9 error npm  v2.14.20
+10 error Invalid version: "0.1.dev"
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

@@ -366,7 +366,7 @@ a {
 }
 .themeless aside.read-next .next-post .link-to:hover,
 .themeless aside.read-next .prev-post .link-to:hover {
-  color: #999999;
+  color: #999;
 }
 .themeless footer.footer {
   background-color: #666;
@@ -519,6 +519,7 @@ a {
 .themeless-content img {
   margin: .2em 0;
   max-width: 98%;
+  display: block;
 }
 .themeless-content a {
   color: #74200a;
@@ -611,6 +612,7 @@ a {
   .themeless-content img {
     margin: .2em 0;
     max-width: 98%;
+    display: block;
   }
   .themeless-content a {
     color: #74200a;
