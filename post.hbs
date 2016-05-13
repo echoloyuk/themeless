@@ -48,6 +48,11 @@
         </footer>
 
     </article>
+    <section class="content-ctrl-panel">
+        <div class="ctrl-panel">
+            <div class="ctrl-btn to-top" id="toTop" title="to the top">&#xe69e;</div>
+        </div>
+    </section>
 </main>
 
 <aside class="read-next">
@@ -66,3 +71,22 @@
 </aside>
 
 {{/post}}
+
+<script type="text/javascript">
+window.onload = function (){
+    $('#toTop').length && $('#toTop').on('click', function (){
+        $('html,body').animate({
+            scrollTop: 0
+        }, 300);
+    });
+    var isShow = false;
+    $(window).on('scroll', function (){
+        var top = $(window).scrollTop();
+        if (top < 500){
+            $('#toTop').hide();
+        } else {
+            $('#toTop').show();
+        }
+    });
+};
+</script>
