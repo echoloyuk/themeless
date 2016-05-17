@@ -70,8 +70,16 @@
     </section>
 </aside>
 
-{{/post}}
+<aside class="read-comments">
+    <section class="comments-title">
+        <span>评论</span>
+    </section>
+    <section class="comments-body">
+        <div id="SOHUCS" sid="himachiCommentsFor{{id}}"></div>
+    </section>
+</aside>
 
+{{/post}}
 <script type="text/javascript">
 window.onload = function (){
     $('#toTop').length && $('#toTop').on('click', function (){
@@ -90,3 +98,11 @@ window.onload = function (){
     });
 };
 </script>
+
+<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cyso2lLYk',
+        conf: 'prod_84d4167e031870541042da9f43f64406'
+    });
+</script> 

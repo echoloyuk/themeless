@@ -420,6 +420,15 @@ a {
 .themeless aside.read-next .prev-post .link-to:hover {
   color: #999999;
 }
+.themeless aside.read-comments {
+  width: 1000px;
+  margin: 20px auto;
+}
+.themeless aside.read-comments .comments-title {
+  font-weight: 800;
+  padding: 20px 0;
+  border-bottom: 1px dashed #333;
+}
 .themeless footer.footer {
   background-color: #666;
   min-height: 160px;
@@ -523,6 +532,9 @@ a {
   .themeless aside.read-next section.next-post,
   .themeless aside.read-next section.prev-post {
     font-size: 18px;
+  }
+  .themeless aside.read-comments {
+    display: none;
   }
   .themeless footer.footer {
     margin-top: 30px;
